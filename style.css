@@ -2,16 +2,21 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    /* Make the left and right parts horizontally aligned */
+    display: flex; 
+    gap: 30px; 
 }
 
 .columns {
-    display: flex;  /* 使用flex布局来创建水平列 */
-    justify-content: space-between;  /* 列之间平均分布 */
-    gap: 20px;  /* 列之间的间距 */
+    /* Using flex layout to create horizontal columns */
+    display: flex;  
+    /* Average distribution between columns */
+    justify-content: space-between;  
+    gap: 20px;  
 }
-
+/* Space allocated equally to each column */
 .column-wrapper {
-    flex: 1;  /* 每列平均分配空间 */
+    flex: 1;  
 }
 
 .column-number {
@@ -46,9 +51,82 @@
 .column5 { background-color: #e91e63; }  
 
 .column1, .column2, .column3, .column4, .column5 {
-    height: 700px; /* 设置固定高度 */
+    /* Set fixed height */
+    height: 700px; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* 内容会自动均匀分布 */
-    padding: 20px 0; /* 上下添加内边距 */
+    /* 内容会自动均匀分布 */
+    justify-content: space-between; 
+    padding: 20px 0;
+}
+
+.right-panel {
+    /* Fixed width, not telescopic */
+    flex: 0 0 400px; 
+    background-color: #fff2cc; 
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.top-buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.top-buttons .purple { background-color: #9b59b6; }
+.top-buttons .blue { background-color: #3498db; }
+.top-buttons .green { background-color: #2ecc71; }
+.top-buttons .orange { background-color: #e67e22; }
+.top-buttons .pink { background-color: #e91e63; }
+
+.display-section {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+.pic {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#story{
+    min-height: 100px;
+    text-align: center;
+}
+.function-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#surprises-btn {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+#playback-btn {
+    background-color:turquoise ;
+    color: white;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
 }
