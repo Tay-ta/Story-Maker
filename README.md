@@ -1,2 +1,2 @@
-# Strory-Maker
+# Story-Maker
 Assignment1
